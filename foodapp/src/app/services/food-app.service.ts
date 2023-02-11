@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class FoodAppService {
-
+ private API_URL = environment.API__URL;
   constructor(private http: HttpClient) { }
 
   getFoodMenu(): Observable<any> {
