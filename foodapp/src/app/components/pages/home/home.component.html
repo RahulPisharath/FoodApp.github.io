@@ -1,0 +1,29 @@
+<p>home works!</p>
+<ul class="restaurant_ul">
+    <li *ngFor="let item of users">
+
+        <div class="food_tile active">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/{{item.data.cloudinaryImageId}}" />
+            <!-- <img [src]="'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ ${item.data.cloudinaryImageId}'"/> -->
+            <div class="food_description">
+                <span class="food_name d-block">{{item.data.name}}</span>
+                <span>{{item.data.id}}</span>
+                <span class="food_detail">
+                    <i class="fa-light fa-location-dot"></i>
+                    {{item.data.address}}</span>
+
+                <ul id="food_meta">
+                    <li>
+                        Calorie
+                        <span>325 CAL</span>
+                    </li>
+                    <li>
+                        Price
+                        <span><i class="fa fa-inr"></i> 550</span>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-sm btn-default positioned-btm">View Detail</button>
+        </div>
+    </li>
+</ul>

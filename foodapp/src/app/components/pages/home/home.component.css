@@ -1,0 +1,74 @@
+.food_tile {
+    font-size: 11px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid lavender;
+    margin: 10px;
+    box-shadow: 5px 5px 15px 5px rgb(230 230 250);
+    padding-bottom: 75px;
+}
+
+.food_tile img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.food_name {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+    margin-bottom: 12px;
+}
+#fda_product_tile span {
+    display: block;
+}
+.food_detail {
+    font-size: 10px;
+    color: rgba(38, 29, 86, 0.4);
+    margin-bottom: 15px;
+}
+#food_meta {
+    margin: 0;
+    padding: 0;
+}
+#food_meta li {
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 1);
+    list-style: none;
+}
+#food_meta li span {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 0.5);
+}
+.btn-default {
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #f88e7c;
+    color: #fff;
+    box-shadow: 0 5px 1px rgb(248 142 124 / 70%);
+    padding: 12px;
+    cursor: pointer;
+}
+.btn-default.positioned-btm{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+}
+.restaurant_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+.restaurant_ul > li {
+    width: calc(100%/4 - 20px);
+ }
+ .food_description{
+    padding:0 12px;
+ }
