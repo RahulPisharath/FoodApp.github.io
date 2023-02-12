@@ -14,61 +14,95 @@
     margin-bottom: 10px;
     width: 100%;
 }
+
 .food_name {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: rgba(38, 29, 86, 1);
     margin-bottom: 12px;
 }
+
 #fda_product_tile span {
     display: block;
 }
+
 .food_detail {
-    font-size: 10px;
-    color: rgba(38, 29, 86, 0.4);
-    margin-bottom: 15px;
+    font-size: 14px;
+    margin: 15px 0; 
 }
+
 #food_meta {
     margin: 0;
     padding: 0;
 }
+
 #food_meta li {
     list-style: none;
     float: left;
-    width: 50%;
-    margin-bottom: 25px;
-    font-size: 12px;
+    width: calc(100%/3);
+   
+    font-size: 14px;
     font-weight: 500;
-    color: rgba(38, 29, 86, 1);
+    color: #ff5722;
     list-style: none;
 }
+
 #food_meta li span {
     font-size: 12px;
-    font-weight: 500;
-    color: rgba(38, 29, 86, 0.5);
+    font-weight: 800;
+   
 }
+
 .btn-default {
-    border: 1px solid rgba(0,0,0,0.04);
-    background-color: #f88e7c;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background-color: #48c479;
     color: #fff;
-    box-shadow: 0 5px 1px rgb(248 142 124 / 70%);
     padding: 12px;
     cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.btn-default.positioned-btm{
+
+.btn-default.positioned-btm {
     position: absolute;
     bottom: 0px;
-    left:0px;
+    left: 0px;
     width: 100%;
 }
-.restaurant_ul{
+
+.restaurant_ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
-.restaurant_ul > li {
+
+.restaurant_ul>li {
     width: calc(100%/4 - 20px);
- }
- .food_description{
-    padding:0 12px;
- }
+}
+
+.food_description {
+    padding: 0 12px;
+}
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+.clr-1 {
+    color: #8a584b;
+}
+.d-block{
+    display: block;
+}
+
+.rating {
+    display: inline-block;
+    border-radius: 3px;
+    background: #57c857;
+    color: #FFF;
+    padding: 0 8px;
+    line-height: 18px;
+}

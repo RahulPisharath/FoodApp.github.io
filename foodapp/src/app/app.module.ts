@@ -10,6 +10,7 @@ import { DetailViewComponent } from './components/pages/detail-view/detail-view.
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     DetailViewComponent,
     HeaderComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

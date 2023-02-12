@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Food } from 'src/app/models/Food';
-import { FoodAppService } from 'src/app/services/food-app.service';
+import { FoodAppService } from '../../../services/food-app.service';
 import { environment } from 'src/environments/environment';
+import { Food } from './../../../models/Food';
 
 
 @Component({
