@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Food } from '../../../models/Food';
+import { Iproduct } from 'src/app/models/product';
 import { FoodAppService } from '../../../services/food-app.service';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-detail-view',
@@ -11,25 +14,19 @@ import { FoodAppService } from '../../../services/food-app.service';
 export class DetailViewComponent implements OnInit  {
 
   errorMEssage: any;
-  restaurant: Food | undefined;
+  product: Iproduct | undefined;
+  movie: any;
+  filteredData: any;
+
 
   constructor(private route: ActivatedRoute,
     private api: FoodAppService) { }
 
   ngOnInit() {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    if (id) {
-      this.getProduct(id);
-    }
-  }
+    console.log(typeof(id));
 
-
-  getProduct(id:number): void {
-    this.api.getFoodMenu(id).subscribe({
-      next: item => this.restaurant = item,
-      error: err => this.errorMEssage = err
-    })
-    console.log(this.restaurant);
   }
 
 }
+
