@@ -11,6 +11,8 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
+import { LoginComponent } from './components/pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AboutComponent } from './components/pages/about/about.component';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    SidebarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,14 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div id="wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="content-area">
+        <app-header></app-header>
+        <div class="wrapper">
+            <div class="align-pad-main">
+                <div class="container-fluid">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
