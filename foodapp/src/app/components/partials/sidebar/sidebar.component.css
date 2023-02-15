@@ -19,16 +19,20 @@
 #sidebar ul li a {
     padding-left: 0px;
 }
+
 #sidebar ul li a i.fa {
     margin: 0px auto;
 }
+
 #sidebar .floating .floating_Div {
     padding: 0px;
 }
+
 #sidebar .floating .floating_Div div {
     width: 100%;
     text-align: center;
 }
+
 #sidebar .floating .floating_Div div a {
     margin-top: 30px;
 }
@@ -36,19 +40,26 @@
 #sidebar ul {
     padding: 0px;
 }
-#sidebar ul li.active, #sidebar ul li:hover {
+
+#sidebar ul li.active,
+#sidebar ul li:hover {
     background-color: #464e62;
 }
-#sidebar ul li.active a, #sidebar ul li:hover a {
+
+#sidebar ul li.active a,
+#sidebar ul li:hover a {
     border-color: #464e62;
-    color:#FFF;
+    color: #FFF;
 }
+
 #sidebar ul li.nav-header:hover {
     background-color: transparent;
 }
+
 #sidebar ul li.nav-header:hover a {
     border-color: transparent;
 }
+
 #sidebar ul li a {
     display: inline-flex;
     padding: 14px 0px 14px 27px;
@@ -57,48 +68,59 @@
     color: #99abb4;
     align-items: baseline;
 }
+
 #sidebar ul li a span.nav-label {
     display: inline-block;
     margin-left: 10px;
     vertical-align: middle;
 }
+
 #sidebar ul li a i.fa {
-   
+
     width: 28px;
     height: 28px;
     vertical-align: middle;
 }
+
 #sidebar ul li.floating {
     position: absolute;
     width: 100%;
 }
+
 #sidebar ul li.floating.bottom {
     bottom: 20px;
 }
+
 #sidebar ul li.floating a {
     padding: 0px;
     border: none;
 }
+
 #sidebar ul li.floating:hover {
     background: transparent;
 }
+
 #sidebar ul li.floating:hover a {
     border: none;
 }
+
 #sidebar ul li.floating .floating_Div {
     padding: 0 24px;
     display: flex;
 }
+
 #sidebar ul li.floating .floating_Div a {
     display: inline-block;
     width: 28px;
     height: 28px;
 }
+
 #sidebar ul li a.location_txt {
     padding: 0px;
     font-size: 12px;
     text-align: center;
 }
+
 #sidebar ul li a.location_txt .ic_location {
     width: 12px;
     height: 16px;
@@ -106,30 +128,41 @@
     vertical-align: middle;
     margin-right: 8px;
 }
+
 #sidebar.animated {
     width: 80px;
 }
+
 #sidebar.animated ul li a span {
     font-size: 12px;
 }
+
 #sidebar.animated ul li {
     padding: 0 10px;
 }
+
 #sidebar.animated #sidebar ul li a {
     padding: 10px 0;
 }
 
-.user_profile{
+.user_profile {
     width: 100px;
     height: 100px;
     display: inline-block;
     margin: 0px auto;
 }
 
-.profile-element{
+.profile-element {
     color: #b0bad3;
     background: #464e62;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #7f7f7f;
+}
+
+.text_style_round {
+    border: 1px solid #7f7f7f;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 10px;
 }

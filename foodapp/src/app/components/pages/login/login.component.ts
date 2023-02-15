@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService} from '../../../services/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -19,25 +20,15 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private route:ActivatedRoute,
     private router:Router,
+    public authService: AuthService
     
   ) { }
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-      username: ['' , Validators.required],
-      password:['', Validators.required]
-    
-    })
+   
   }
 
   login(){
-      if(this.username == "Admin" && this.password =="Admin"){
-        this.submitted=true;
-        this.router.navigateByUrl('home');
-        console.log("Login Successful");
-      }
-      else{
-        alert("Wrong username or password")
-      }
+    this.authService.login();
   }
 }

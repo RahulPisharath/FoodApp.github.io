@@ -6,16 +6,17 @@ import { DetailViewComponent } from './components/pages/detail-view/detail-view.
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { MenuComponent } from './components/pages/menu/menu.component';
+import { AuthGuard } from './components/guards/auth.guard';
 
 const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component:AboutComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'detail/:id', component: DetailViewComponent },
-  { path: 'cart', component: CartComponent }, 
-  { path: '**', redirectTo:'login' }
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+  { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },
+  { path: 'menu', component: MenuComponent, canActivate: [AuthGuard] },
+  { path: 'detail/:id', component: DetailViewComponent, canActivate: [AuthGuard] },
+  { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
+  { path: '**', redirectTo: 'login' }
 ];
 
 @NgModule({

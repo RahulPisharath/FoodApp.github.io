@@ -1,12 +1,8 @@
-<div class="col-md-6 offset-md-3 mt-5">
-    <div class="alert alert-info">
-        Username: Admin<br />
-        Password: Admin<br />
-    </div>
+<div class="col-md-4 offset-md-4 mt-5">
     <div class="card">
         <h4 class="card-header"> Login</h4>
         <div class="card-body">
-            <form [formGroup]="loginForm">
+            <form #loginForm="ngForm">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" name="username" [(ngModel)]="username" class="form-control" required  />
@@ -15,7 +11,7 @@
                     <label for="password">Password</label>
                     <input type="password" name="password" [(ngModel)]="password" class="form-control" required  />
                 </div>
-                <button  class="btn btn-primary" [disabled]="loginForm.invalid"  type="submit" (click)="login()">Sign in</button>
+                <button  class="btn btn-primary" [disabled]="loginForm.invalid"   type="submit" (click)="login()">Sign in</button>
             </form>
         </div>
     </div>

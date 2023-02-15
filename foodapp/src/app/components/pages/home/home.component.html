@@ -1,38 +1,52 @@
-<div class="container">
-    <ul class="restaurant_ul">
-        <li *ngFor="let item of users">
-            <div class="food_tile active">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/{{item.data.cloudinaryImageId}}" />
-                <div class="food_description">
-                    <span class="food_name d-block">{{item.data.name}}</span>
-                    <div class="d-flex justify-content-between">
-                        <span class="food_detail">
-                            <i class="fa-light fa-location-dot clr-1 bold"></i>
-                            {{item.data.area}}</span>
-                        <span class="rating">{{item.data.avgRating}}</span>
-                   
+<div id="wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="content-area">
+        <app-header></app-header>
+        <div class="wrapper">
+            <div class="align-pad-main">
+                <div class="container-fluid">
+                    <div class="container">
+
+
+                        <ul class="restaurant_ul">
+                            <li *ngFor="let item of users">
+                                <div class="food_tile active">
+                                    <img
+                                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/{{item.data.cloudinaryImageId}}" />
+                                    <div class="food_description">
+                                        <span class="food_name d-block">{{item.data.name}}</span>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="food_detail">
+                                                <i class="fa-light fa-location-dot clr-1 bold"></i>
+                                                {{item.data.area}}</span>
+                                            <span class="rating">{{item.data.avgRating}}</span>
+
+                                        </div>
+
+                                        <ul id="food_meta">
+                                            <li>
+
+                                                <span class="d-block">{{item.data.aggregatedDiscountInfo.header}}</span>
+                                            </li>
+                                            <li>
+
+                                                <span class="d-block"> {{item.data.slaString}}</span>
+                                            </li>
+                                            <li>
+                                                <span class="d-block">
+                                                    {{item.data.costForTwoString}}
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a routerLink="/detail/{{item.data.id}}"
+                                        class="btn btn-sm btn-default positioned-btm">View Detail</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-    
-                    <ul id="food_meta">
-                        <li>
-                            
-                            <span class="d-block">{{item.data.aggregatedDiscountInfo.header}}</span>
-                        </li>
-                        <li>
-                            
-                            <span class="d-block"> {{item.data.slaString}}</span>
-                        </li>
-                        <li>
-                            <span class="d-block"> 
-                            {{item.data.costForTwoString}}
-                            </span>
-                        </li>
-                    </ul>
                 </div>
-                <a  routerLink="/detail/{{item.data.id}}" class="btn btn-sm btn-default positioned-btm">View Detail</a>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
-
-
