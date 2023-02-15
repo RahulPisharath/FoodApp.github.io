@@ -6,8 +6,8 @@
     width: 240px;
     z-index: 13;
     height: 100%;
-    background: #03a9f4;
-    box-shadow: 11px 85px 11px -7px #d3d3d3;
+    background: #313644;
+    border-right: 1px solid #e6ecf5;
 }
 
 #sidebar .nav {
@@ -37,10 +37,11 @@
     padding: 0px;
 }
 #sidebar ul li.active, #sidebar ul li:hover {
-    background-color: #0288d1;
+    background-color: #464e62;
 }
 #sidebar ul li.active a, #sidebar ul li:hover a {
-    border-color: #ffc107;
+    border-color: #464e62;
+    color:#FFF;
 }
 #sidebar ul li.nav-header:hover {
     background-color: transparent;
@@ -53,7 +54,7 @@
     padding: 14px 0px 14px 27px;
     border-left: 4px solid transparent;
     font-size: 14px;
-    color: #fffefe;
+    color: #99abb4;
     align-items: baseline;
 }
 #sidebar ul li a span.nav-label {
@@ -117,12 +118,18 @@
 #sidebar.animated #sidebar ul li a {
     padding: 10px 0;
 }
-#sidebar .nav-header {
-    margin-top: 20px;
-}
+
 .user_profile{
     width: 100px;
     height: 100px;
     display: inline-block;
     margin: 0px auto;
+}
+
+.profile-element{
+    color: #b0bad3;
+    background: #464e62;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7f7f7f;
 }

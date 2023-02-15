@@ -13,6 +13,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
 import { AboutComponent } from './components/pages/about/about.component';
 import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
 import { LoginComponent } from './components/pages/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LoginComponent } from './components/pages/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
